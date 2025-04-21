@@ -11,9 +11,13 @@
     "url": "https://github.com/htmlacademy-javascript/2300497-kekstagram-1/issues"
   },
   "devDependencies": {
+    "@babel/core": "7.25.7",
+    "@babel/preset-env": "7.25.7",
+    "babel-loader": "9.2.1",
     "browser-sync": "2.27.11",
     "eslint": "8.33.0",
-    "eslint-config-htmlacademy": "9.0.0"
+    "eslint-config-htmlacademy": "9.0.0",
+    "webpack-dev-server": "^5.1.0"
   },
   "license": "MIT",
   "dependencies": {
@@ -21,7 +25,6 @@
     "faker": "6.6.6"
   },
   "scripts": {
-    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
-    "lint": "eslint js/"
+    "start": "webpack serve --mode development --open"
   }
 }
